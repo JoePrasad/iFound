@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/a"
+
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:text="Galaxy Nexus"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000000000"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_name"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_pair"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Pair"
+        android:layout_alignBottom="@+id/tv_address"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Alarm"
+        android:onClick="pause"
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal" />
+
+
+
+
+</LinearLayout>
